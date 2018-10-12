@@ -26,7 +26,7 @@ public  class MainActivity extends AppCompatActivity implements View.OnClickList
                 double x = Double.valueOf(editText1.getText().toString());
                 double y = Double.valueOf(editText2.getText().toString());
 
-                textView.setText(String.valueOf("aaa"));
+                textView.setText(String.valueOf("aaa")); // marge
             }
         });
     }
