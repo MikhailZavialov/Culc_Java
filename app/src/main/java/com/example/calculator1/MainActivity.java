@@ -8,17 +8,17 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public  class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     Button button1 = findViewById(R.id.button1);
     EditText editText1 = findViewById(R.id.editText);
     EditText editText2 = findViewById(R.id.editText2);
     TextView textView = findViewById(R.id.textView);
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_main);
 
         button1.setOnClickListener(new OnClickListener() {
             @Override
@@ -26,10 +26,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 double x = Double.valueOf(editText1.getText().toString());
                 double y = Double.valueOf(editText2.getText().toString());
 
-                textView.setText(String.valueOf("aaa")); /* daaaaaaa*/
+                textView.setText(String.valueOf("aaa"));
             }
         });
     }
 
+    @Override
+    public void onClick(View v) {
+
+    }
 }
 
